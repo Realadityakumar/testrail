@@ -17,9 +17,8 @@ def test_endpoint():
 def health():
     return {"status": "ok"}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-#check
+# Make sure the app is available for Vercel
+# Remove the if __name__ == "__main__" block for Vercel deployment
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
